@@ -1,10 +1,7 @@
-# Remove files older than 90 days.
-
 import datetime
 import os
 import shutil
 import re
-
 
 #Set a base Dir
 basedir = r"\\localhost\d$"
