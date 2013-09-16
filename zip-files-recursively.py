@@ -9,10 +9,10 @@ outputdir = r"C:\output"
 def zipit(archivepath,basedir):
 	paths = os.listdir(archivepath)
 
-	for file in paths:
-		filename = os.path.join(archivepath,file)
-		zip = zipfile.ZipFile(os.path.join(outputdir, file +".zip"), "w", zipfile.ZIP_DEFLATED, allowZip64=True)
-		zip.write(filename, file)
+	for f in paths:
+		filename = os.path.join(archivepath,f)
+		zip = zipfile.ZipFile(os.path.join(outputdir, f +".zip"), "w", zipfile.ZIP_DEFLATED, allowZip64=True)
+		zip.write(filename, f)
 		zip.close()
 	return
 
