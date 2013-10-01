@@ -5,7 +5,7 @@ import re
 
 #Set a base Dir
 basedir = r"\\localhost\d$"
-now = time()
+
 
 for dirpath, dirnames, filenames in os.walk(basedir):
    for dir in dirnames:
