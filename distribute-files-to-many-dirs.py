@@ -67,7 +67,7 @@ class Resources:
 			pass	
 
 if __name__ == '__main__':
-	# Check for Production resources and process.
+	# Create Production instance.
 	prod = Resources("//127.0.0.1/d$/Resources/Production/",
 	 		"//127.0.0.1/d$/Resources/Prod_done",
 			[	"//127.0.0.1/d$/Resources/Target204",
