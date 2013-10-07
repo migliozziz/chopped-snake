@@ -22,6 +22,8 @@ class Resources:
 
 	# Returns a dictionary.
 	def _directory_table(self):
+		# Key: Filename/File Extension
+		# Value: Relative path.
 		table = {# AFP/Mix mode
                         'X0': "AFPDSIN/CODEDFNT",
                         'T1': "AFPDSIN/CODEPAGE",
@@ -69,6 +71,6 @@ if __name__ == '__main__':
 	prod = Resources("//127.0.0.1/d$/Resources/Production/",
 	 		"//127.0.0.1/d$/Resources/Prod_done",
 			[	"//127.0.0.1/d$/Resources/Target204",
-        "//127.0.0.1/d$/Resources/Target514",
+        			"//127.0.0.1/d$/Resources/Target514",
 				"//127.0.0.1/d$/Resources/Default"])
 	prod.Main()
