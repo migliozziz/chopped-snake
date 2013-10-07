@@ -15,7 +15,7 @@ class Resources:
 		self.check_watch_directory()
 
 	def _logging(self):
-		logging.basicConfig(filename='AetnaResources.log',
+		logging.basicConfig(filename='Resources.log',
                                         level=logging.INFO,
                                         format='%(asctime)s \t%(message)s',
                                         datefmt='%m/%d/%Y %H:%M:%S')
