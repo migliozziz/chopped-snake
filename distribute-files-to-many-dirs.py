@@ -6,9 +6,9 @@ class Resources:
 
 	def __init__(self, watchDir, doneDir, resDirsList):
 		self.watchDir 		= watchDir # Watch Dir.
-		self.doneDir 		  = doneDir # Post Processing Move to Dir.
+		self.doneDir 		= doneDir # Post Processing Move to Dir.
 		self.resDirsList	= resDirsList # List of Root Resource Dirs.
-		self.table 		    = self._directory_table() 
+		self.table 		= self._directory_table() 
 		self._logging()
 
 	def Main(self):
