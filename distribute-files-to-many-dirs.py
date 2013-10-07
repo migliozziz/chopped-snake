@@ -56,6 +56,7 @@ class Resources:
 		for targetResourcePath in self.resDirsList:
 			shutil.copy(resPath, os.path.join(targetResourcePath, relPath))
 			logging.info('Copied to: %s', os.path.join(targetResourcePath, relPath))
+		# Once resource has been copied to all locations, move the file from WatchDir.
 		self._move_resource(resPath, resource)
 
 	def _move_resource(self, resPath, resource):
