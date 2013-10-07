@@ -62,7 +62,7 @@ class Resources:
 		try:
                         shutil.move(resPath, self.doneDir)
 			logging.info('Distribution complete. Moving to: %s',
-			 				os.path.join(self.doneDir, resource))
+			 		os.path.join(self.doneDir, resource))
 		except WindowsError:
 			pass	
 
