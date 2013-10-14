@@ -14,7 +14,7 @@ for d in dlist:
     path = os.listdir(d)
     for files in path:
         fullpath = os.path.join(d, files)
-        if os.path.isfile(full):
+        if os.path.isfile(fullpath):
             timediff = (now - os.path.getmtime(full))/86400
             if timediff > days:    # Older than x days.
                 os.remove(fullpath)
