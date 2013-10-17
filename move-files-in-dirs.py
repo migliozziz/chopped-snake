@@ -13,7 +13,6 @@ class Filemove:
     def main(self):
         path = os.listdir(self.source)
         for f in path:
-            self._createTextFile(f)
             self.move(os.path.join(self.source, f))
 
     def move(self, fullpath):
