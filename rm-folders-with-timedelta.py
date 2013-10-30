@@ -8,8 +8,8 @@ basedir = r"\\localhost\d$"
 
 
 for dirpath, dirnames, filenames in os.walk(basedir):
-   for dir in dirnames:
-      curpath = os.path.join(dirpath, dir)
+   for d in dirnames:
+      curpath = os.path.join(dirpath, d)
       dir_modified = datetime.datetime.fromtimestamp(os.path.getmtime(curpath))
 
       # Conditional set to remove folders recursively older than 90 days.
